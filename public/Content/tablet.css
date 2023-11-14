@@ -161,20 +161,12 @@ aside p span{
     color: white;
 }
 
-#row1, #row3{
-    /*background-image: linear-gradient(#e34e02, black 65%);*/
-}
-
 #row1 aside p{
     margin-top: -200px;
     color: white;
     font-size: 40%;
     margin-right: 170px;
     margin-top: -130px;
-}
-
-#row2{
-    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
 }
 
 #row2 aside p{

@@ -185,20 +185,10 @@ aside p span{
     color: white;
 }
 
-/*makes row 1 and row 3 have a gradient background different from all the other pages*/
-#row1, #row3{
-    /*background-image: linear-gradient(#e34e02, black 65%);*/
-}
-
 /*adjusts the color and the positioning of the project description*/
 #row1 aside p{
     margin-top: -200px;
     color: white;
-}
-
-/*makes row 2 have a gradient background to fit in perfectly with the other rows*/
-#row2{
-    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
 }
 
 /*adjusts the color and the positioning of the project description*/
