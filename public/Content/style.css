@@ -252,3 +252,8 @@ form {
 form p input {
     max-width: 370px;
 }
+
+.row h1 {
+    color: black;
+    font-family: "Black Ops One", sans-serif;
+}

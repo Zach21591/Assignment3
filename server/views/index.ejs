@@ -7,8 +7,22 @@
     </div>
   </div>
 </main>
+
 <% if (title == "Home") { %>
   <% include partials/home.ejs %>
 <% } %>
+
+<% if (title == "About Me") { %>
+  <% include partials/about.ejs %>
+<% } %>
+
+<% if (title == "Projects") { %>
+  <% include partials/projects.ejs %>
+<% } %>
+
+<% if (title == "Contact Me") { %>
+  <% include partials/contact.ejs %>
+<% } %>
+
 <% include partials/bottom_nav.ejs %>
 <% include partials/footer.ejs %>

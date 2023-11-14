@@ -227,3 +227,8 @@ article h3{
 article h3 span {
     color: white;
 }
+
+.row h1 {
+    color: black;
+    font-family: "Black Ops One", sans-serif;
+}
