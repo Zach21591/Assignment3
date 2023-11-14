@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*imports the font that I used for the webpage*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/*edits the overall format of the webpage*/
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /*makes the background of all pages a gradient blue and black*/
+    background-image: linear-gradient(gray, black);
+    /*makes gradient background cover the entire page*/
+    min-height: 100vh;
+    /*hides any horizontal scrollbar*/
+    overflow-x: hidden;
+}
+
+header{
+    /*makes the header color this specific color*/
+    /*background-color: #1EE68C;*/
+    /*adjusts the sixe of the header*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer{
+    /*makes the footer color this specific color*/
+    /*adjusts the size of the footer*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 a{
+    /*adjusts so the links aren't touching the top brorder*/
+    margin-top: 5px;
+    min-height: 10px;
+    /*adjusts so the links aren't touching the header image*/
+    margin-left: 60px;
+    display: inline-flex;
+    /*makes the link font this specifc font*/
+    font-family: "Black Ops One", sans-serif;
+    /*adjusts the boldness of the word*/
+    font-weight: 400;
+    /*adjusts the overall size of the word*/
+    font-size: 20px;
+    /*link color is this specific color*/
+    color: #BA03FF;
+    padding: 0px 3px;
+}
+
+.navbar-brand img{
+    /*changes the size of the image*/
+    width: 50px;
+    height: auto;
+    position: absolute;
+    /*adjusts the image so its not touching the borders*/
+    top: -10px;
+    left: 5px;
+}
+
+/*similar to .photoIcon where it changes the overall size and position of the image*/
+.footerImg img{
+    width: 50px;
+    height: auto;
+    top: 15px;
+    left: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+/*similar to .photoIcon where it changes the overall size and position of the image*/
+.myPhoto img{
+    width: 90px;
+    height: auto;
+    float: right;
+    margin-right: 500px;
+    margin-top: -325px;
+}
+
+/*adjusts the page name*/
+h2{
+    margin-top: 10px;
+    min-height: 30px;
+    margin-right: 40px;
+    float: right;
+    font-family: "Black Ops One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    padding: 0px 3px;
+}
+
+/*adjusts the home page top text*/
+.homeScreen{
+    font-family: "Black Ops One", sans-serif;
+    color: black;
+    font-size: 100px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+/*adjusts the home page bottom text*/
+.homeScreen h3 span{
+    color: white;
+    margin-top: -10px;
+    margin-left: 0px;
+    /*removes extra space between the text*/
+    overflow: hidden;
+    /*adjusts the text so its around position as the top text*/
+    position: relative;
+    display: inline-block;
+}
+
+/*adjusts the video positioning in the about me page*/
+video{
+    margin-top: -20px;
+    margin-left: 290px;
+}
+
+/*adjusts the positioning and color of the "heading" of the about me page and projects page*/
+.aboutMeTitle,.projectsTitle {
+    font-family: "Black Ops One", sans-serif;
+    color: #FAEE0F;
+    font-size: 75px;
+    /*centers the text on the page*/
+    text-align: center;
+    width: 100%;
+    /*allows no float*/
+    float: none;
+}
+
+/*adjusts the size and positioning of the logo for the contact me page*/
+.logoForContact img{
+    width: 75px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+/*displays the submit button in the middle of the page*/
+.submitButton{
+    text-align: center;
+}
+
+/*colors the asterisks on the contact page in red to let viewer know that it is requried*/
+p span{
+    color: #E34E02;
+}
+
+/*adjusts the text in the footer to be in the center*/
+footer h4{
+    text-align: center;
+    font-family: "Black Ops One", sans-serif;
+}
+
+/*adjusts the copyright message to the bottom left of the footer*/
+footer h4 p{
+    text-align: left;
+    margin-left: 5px;
+}
+
+/*all labels in the form are the font below*/
+form p label{
+    font-family: "Black Ops One", sans-serif;
+    color: black;
+}
+
+/*adjusts the text location and color on the about me page*/
+aside p{
+    font-family: "Black Ops One", sans-serif;
+    font-size: 24px;
+    color: black;
+    margin-top: -200px;
+    margin-right: 250px;
+    float: right;
+}
+
+/*changes the specific part of the text in the about me page to the color below*/
+aside p span{
+    color: white;
+}
+
+/*makes row 1 and row 3 have a gradient background different from all the other pages*/
+#row1, #row3{
+    /*background-image: linear-gradient(#e34e02, black 65%);*/
+}
+
+/*adjusts the color and the positioning of the project description*/
+#row1 aside p{
+    margin-top: -200px;
+    color: white;
+}
+
+/*makes row 2 have a gradient background to fit in perfectly with the other rows*/
+#row2{
+    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
+}
+
+/*adjusts the color and the positioning of the project description*/
+#row2 aside p{
+    float: right;
+    margin-top: -450px;
+    margin-right: 175px;
+    color: white;
+}
+
+/*adjusts the color and the positioning of the project description*/
+#row3 aside p{
+    margin-right: 220px;
+    margin-top: -165px;
+    color: white;
+}
+
+/*makes changes to the jumbotron*/
+.container .display-4 {
+    /*adjusts how much the text goes left*/
+    margin-left: -90px;
+    /*adjusts how close the text is to the top*/
+    margin-top: 15px;
+    /*chanegs the text color to black*/
+    color: black;
+    /*makes the font Black Ops One*/
+    font-family: "Black Ops One", sans-serif;
+}
+
+/*changes the color of the text and size in the contact me page*/
+p, footer h4 {
+    color: white;
+    font-size: 16px;
+}
+
+article h3{
+    color: black;
+    font-size: 100px;
+}
+
+article h3 span {
+    color: white;
+}
+
+form {
+    max-width: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+form p input {
+    max-width: 370px;
+}

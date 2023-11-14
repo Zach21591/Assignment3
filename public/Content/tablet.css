@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/*imports the font that I used for the webpage*/
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+/*the following css code below is very similar to the code on the style.css file*/
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(gray, black);
+    min-height: 10vh;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: #1EE68C;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 a{
+    margin-top: 5px;
+    min-height: 10px;
+    margin-left: 60px;
+    display: inline-flex;
+    font-family: "Black Ops One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #BA03FF;
+    padding: 0px 3px;
+}
+
+.navbar-brand img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+}
+
+.footerImg img{
+    width: 50px;
+    height: auto;
+    top: 15px;
+    left: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.myPhoto img{
+    width: 50px;
+    height: auto;
+    float: right;
+    margin-right: 400px;
+    margin-top: -225px;
+}
+
+h2{
+    margin-top: 10px;
+    min-height: 30px;
+    margin-right: 40px;
+    float: right;
+    font-family: "Black Ops One", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    padding: 0px 3px;
+}
+
+h3{
+    font-family: "Black Ops One", sans-serif;
+    color: #FAEE0F;
+    font-size: 90px;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+h3 span{
+    color: white;
+    margin-top: -10px;
+    margin-left: 0px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+video{
+    margin-top: -20px;
+    margin-left: 290px;
+    margin-left: 200px;
+    width: 55%;
+    height: auto;
+}
+
+.aboutMeTitle,.projectsTitle {
+    font-family: "Black Ops One", sans-serif;
+    color: #FAEE0F;
+    font-size: 75px;
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+
+.logoForContact img{
+    width: 75px;
+    height: auto;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+form{
+    max-width: 350px;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.submitButton{
+    text-align: center;
+}
+
+p span{
+    color: red;
+}
+
+footer h4{
+    text-align: center;
+    font-family: "Black Ops One", sans-serif;
+}
+
+footer h4 p{
+    text-align: left;
+    margin-left: 5px;
+}
+
+form p label{
+    font-family: "Black Ops One", sans-serif;
+}
+
+aside p{
+    font-family: "Black Ops One", sans-serif;
+    font-size: 10px;
+    color: black;
+    margin-top: -150px;
+    margin-right: 300px;
+    float: right;
+}
+
+aside p span{
+    color: white;
+}
+
+#row1, #row3{
+    /*background-image: linear-gradient(#e34e02, black 65%);*/
+}
+
+#row1 aside p{
+    margin-top: -200px;
+    color: white;
+    font-size: 40%;
+    margin-right: 170px;
+    margin-top: -130px;
+}
+
+#row2{
+    /*background-image: linear-gradient(black, #e34e02, black 65%, #e34e02);*/
+}
+
+#row2 aside p{
+    float: right;
+    margin-top: -250px;
+    margin-right: 150px;
+    color: white;
+    font-size: 40%;
+}
+
+#row3 aside p{
+    margin-right: 160px;
+    margin-top: -70px;
+    color: white;
+    font-size: 40%;
+}
+
+.letterCount img{
+    width: 30%;
+    height: auto;
+}
+
+.calculator img{
+    width: 30%;
+    height: auto;
+}
+
+.bmiCalc img{
+    width: 30%;
+    height: auto;
+}
+
+.container .display-4 {
+    margin-left: 150px;
+    margin-top: 20px;
+    color: black;
+    font-family: "Black Ops One", sans-serif;
+}
+
+p, footer h4 {
+    color: white;
+    font-size: 16px;
+}
+
+article h3{
+    color: black;
+    font-size: 100px;
+}
+
+article h3 span {
+    color: white;
+}
