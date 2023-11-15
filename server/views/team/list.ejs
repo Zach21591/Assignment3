@@ -1,16 +1,21 @@
 <% include ../partials/header.ejs %>
 <% include ../partials/main_nav.ejs %>
+<!--Has an update, remove, and add team button for when user wants to update a document, add a new team, or remove a team-->
+<!--remove button will give a confirmation before the document is truly removed-->
 <main class="container">
     <div class="row">
         <div class="offset-md-1 col-md-10">
             <h1><%= title %></h1>
+        <!--Creates the table for the mongodb document-->
         <table class="table table-bordered table-striped table-hover">
             <tr class="d-flex">
+                <!--The label names for the document-->
                 <th class="text-center col-3">Team Name</th>
                 <th class="text-center col-2">Founded</th>
                 <th class="text-center col-5">Key Players</th>
                 <th class="text-center col-2">Options</th>
             </tr>
+            <!--makes a for statement to add the text for the labels-->
             <% for(let count=0;count<TeamList.length;count++) { %>    
             <tr class="d-flex">
                 <td class="text-center col-3"><%= TeamList[count].TeamName %></td>

@@ -9,6 +9,7 @@
             <h1><%= title %></h1>
 
             <form class="form" method="POST">
+                <!--Creates form so the user can edit the team name-->
                 <div class="form-group">
                     <label for="nameTextField">Team Title</label>
                     <input type="text" class="form-control"
@@ -19,6 +20,7 @@
                     required>
                 </div>
 
+                <!--Creates a form so the user can edit the year the team was founded-->
                 <div class="form-group">
                     <label for="foundedTextField">Founded Year</label>
                     <input type="text" class="form-control"
@@ -29,6 +31,7 @@
                     required>
                 </div>
 
+                <!--Creates a form so the user can edit the key players of the team-->
                 <div class="form-group">
                     <label for="keyPlayersTextField">Key Players</label>
                     <input type="text" class="form-control"
@@ -41,9 +44,11 @@
                 <br>
 
                 <button class="btn btn-success" type="submit">
+                    <!--Adds a button to submit the added document of the mongodb-->
                     <i class="fas fa-edit"></i> Submit</button>
                 
                     <a href="/teamlist" class="btn btn-danger">
+                        <!--Adds a button to cancel the document of the mongodb-->
                         <i class="fa-solid fa-xmark"></i> Cancel</a>
 
             </form>

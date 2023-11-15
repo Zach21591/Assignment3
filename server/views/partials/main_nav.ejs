@@ -1,11 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-black bg-white">
     <div class="container-fluid">
+      <!--Adds a text with authors name on the left side of the navbar that takes them to the home page-->
       <a class="navbar-brand" href="/home"><i class="fa-solid fa-circle-user fa-lg"></i> Zach D'Angelo</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <!--The following if statement represent when a page is displayed, the link/button of the page is darker than the rest; When page is not displayed, regular color-->
           <li class="nav-item">
             <% if(title == "Home") { %>
               <a class="nav-link active" href="/home">

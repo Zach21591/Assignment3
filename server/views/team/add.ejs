@@ -9,6 +9,7 @@
             <h1><%= title %></h1>
 
             <form class="form" method="POST">
+                <!--Creates a form for the user to add the team name-->
                 <div class="form-group">
                     <label for="teamNameTextField">Team Name</label>
                     <input type="text" class="form-control"
@@ -17,6 +18,7 @@
                     name="TeamName" required>
                 </div>
 
+                <!--Creates a form for the user to add the year the team was founded-->
                 <div class="form-group">
                     <label for="foundedTextField">Founded Year</label>
                     <input type="text" class="form-control"
@@ -24,7 +26,8 @@
                     placeholder="Enter the Teams Founded Year"
                     name="Founded" required>
                 </div>
-
+                
+                <!--Creates a form for the user to add the key players of the team-->
                 <div class="form-group">
                     <label for="keyPlayersTextField">Key Players</label>
                     <input type="text" class="form-control"
@@ -33,10 +36,12 @@
                     name="KeyPlayers" required>
                 </div>
                 <br>
-
+                
                 <button class="btn btn-success" type="submit">
+                    <!--Adds a button to submit the added document of the mongodb-->
                     <i class="fas fa-edit"></i> Submit</button>
                 
+                    <!--Cancels the changes made to the mongodb document-->
                     <a href="/teamlist" class="btn btn-danger">
                         <i class="fa-solid fa-xmark"></i> Cancel</a>
 

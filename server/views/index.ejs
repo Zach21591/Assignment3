@@ -1,6 +1,7 @@
 <% include partials/header.ejs %>
 <% include partials/main_nav.ejs %>
 <main>
+  <!--displayed the title-->
   <div class="jumbotran jumbotran-fluid">
     <div class="container">
       <h1 class="display-4"><%= title %></h1>
@@ -8,6 +9,7 @@
   </div>
 </main>
 
+<!--if statement for when the home, about, projects, and contact me page is displayed-->
 <% if (title == "Home") { %>
   <% include partials/home.ejs %>
 <% } %>
