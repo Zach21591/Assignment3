@@ -18,14 +18,15 @@
                 <td class="text-center col-5"><%= TeamList[count].KeyPlayers %></td>
                 <td class="text-center col-1">
                     <a href="/teamlist/edit/<%= TeamList[count]._id %>" 
-                        class="btn btn-primary btn-sm">
-                        <i class="fas fa-pencil-alt"></i> Edit
+                        class="btn btn-success btn-sm">
+                        <i class="fa-solid fa-file-pen"></i> Update
                     </a>
                 </td>
                 <td class="text-center col-1">
-                    <a href="/teamlist/delete/<%= TeamList[count]._id %>" 
+                    <a href="/teamlist/delete/<%= TeamList[count]._id %>"
+                        onclick="return confirm('Are you sure you want to remove the following you selected?')" 
                         class="btn btn-danger btn-sm">
-                        <i class="fa-solid fa-trash fa-sm"></i> Delete
+                        <i class="fa-solid fa-trash"></i> Remove
                     </a>
                 </td>
             </tr>
