@@ -25,12 +25,12 @@ router.get('/about', function(req, res, next) {
 });
 
 
-/* GET Products page. */
+/* GET Products page.
 router.get('/projects', function(req, res, next) {
   res.render('index', { 
     title: 'Projects'  
   });
-});
+});*/
 
 /* GET Contact page. */
 router.get('/contacts', function(req, res, next) {
