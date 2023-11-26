@@ -1,2 +1,2 @@
 //gives the webpage access to the collection in the mongodb
-module.exports = {"URI":"mongodb://0.0.0.0/0:27017/SportsTeams"}
+module.exports = {"URI":"mongodb+srv://zacharydangelo:admin123@cluster0.hrfcnph.mongodb.net/SportsTeams"}

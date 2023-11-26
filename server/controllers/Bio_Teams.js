@@ -8,7 +8,8 @@ module.exports.DisplayTeamList = async (req,res,next)=>{ //< Mark function as as
        const TeamList = await Team.find(); //< Use of await keyword
        res.render('team/list', {
           title: 'Team List', 
-          TeamList: TeamList
+          TeamList: TeamList,
+          displayName: req.user ? req.user.displayName:''
        });
     }catch(err){
        console.error(err);
@@ -23,7 +24,8 @@ module.exports.DisplayTeamList = async (req,res,next)=>{ //< Mark function as as
     try{
         res.render('team/add',
         {
-            title:'Add Team'
+            title:'Add Team',
+            displayName: req.user ? req.user.displayName:''
         })
     }
     catch(err)
@@ -63,7 +65,8 @@ module.exports.EditTeam = async (req,res,next)=>{
     res.render('team/edit',
     {
         title:'Edit Team',
-        Team:teamToEdit
+        Team:teamToEdit,
+        displayName: req.user ? req.user.displayName:''
     })
 }
 catch(error){

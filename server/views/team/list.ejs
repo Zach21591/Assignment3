@@ -1,48 +1,58 @@
-<% include ../partials/header.ejs %>
-<% include ../partials/main_nav.ejs %>
-<!--Has an update, remove, and add team button for when user wants to update a document, add a new team, or remove a team-->
-<!--remove button will give a confirmation before the document is truly removed-->
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+<!-- Main Content -->
 <main class="container">
     <div class="row">
-        <div class="offset-md-1 col-md-10">
+        <div class="col-md-offset-3 col-md-10">
             <h1><%= title %></h1>
-        <!--Creates the table for the mongodb document-->
-        <table class="table table-bordered table-striped table-hover">
-            <tr class="d-flex">
-                <!--The label names for the document-->
-                <th class="text-center col-3">Team Name</th>
-                <th class="text-center col-2">Founded</th>
-                <th class="text-center col-5">Key Players</th>
-                <th class="text-center col-2">Options</th>
-            </tr>
-            <!--makes a for statement to add the text for the labels-->
-            <% for(let count=0;count<TeamList.length;count++) { %>    
-            <tr class="d-flex">
-                <td class="text-center col-3"><%= TeamList[count].TeamName %></td>
-                <td class="text-center col-2"><%= TeamList[count].Founded %></td>
-                <td class="text-center col-5"><%= TeamList[count].KeyPlayers %></td>
-                <td class="text-center col-1">
-                    <a href="/teamlist/edit/<%= TeamList[count]._id %>" 
-                        class="btn btn-success btn-sm">
-                        <i class="fa-solid fa-file-pen"></i> Update
-                    </a>
-                </td>
-                <td class="text-center col-1">
-                    <a href="/teamlist/delete/<%= TeamList[count]._id %>"
-                        onclick="return confirm('Are you sure you want to remove the following you selected?')" 
-                        class="btn btn-danger btn-sm">
-                        <i class="fa-solid fa-trash"></i> Remove
-                    </a>
-                </td>
-            </tr>
+            <% if(typeof displayName=='string' && displayName) { %>
+                <a href="/teamlist/add" class="btn btn-primary" role="button">
+                <i class="fas fa-plus-circle"></i> Add a Book </a>
+            <br>
             <% } %>
-        </table>
-        <a href="/teamlist/add" class="btn btn-primary" 
-            role="button"><i class="fas fa-plus-circle"></i> Add Team</a>      
-        <br>
-        <br>
-    </div>
-    </div>
+            <br>
+    <table class= "table table-bordered table-striped table-hover">
+    <tr class="d-flex">
+    <% if(typeof displayName=='string' && displayName) { %>
+        <th class="text-center col-3">TeamName</th>
+        <th class="text-center col-2">Founded</th>
+        <th class="text-center col-5">KeyPlayers</th>
+        <th class="text-center col-1"></th>
+        <th class="text-center col-1"></th>
+    <% } else { %>
+    <th class="text-center col-3">TeamName</th>
+        <th class="text-center col-2">Foudned</th>
+        <th class="text-center col-5">KeyPlayers</th>
+    <% } %>
+
+    </tr>
+    <!-- Repeat the template -->
+    <% for(let count=0; count < TeamList.length; count++) { %>
+        <tr class="d-flex">
+        <% if(typeof displayName=='string' && displayName) { %>
+            <td class="text-center col-3"><%= TeamList[count].TeamName %></td>
+            <td class="text-center col-2"><%= TeamList[count].Founded %></td>
+            <td class="text-center col-5"><%= TeamList[count].KeyPlayers %></td>
+            <td class="text-center col-1">
+                <a href="/teamlist/edit/<%= TeamList[count]._id %>"
+                    class="btn btn-primary">
+                    <i class="fas fa-pencil-alt"></i> Edit </a>
+            </td>
+            <td class="text-center col-1">
+                <a href="/teamlist/delete/<%= TeamList[count]._id %>"
+                    class="btn btn-danger">
+                    <i class="fas fa-trash-alt"></i> Delete </a>
+            </td>
+        <% } else { %>
+            <td class="text-center col-3"><%= TeamList[count].TeamName %></td>
+            <td class="text-center col-2"><%= TeamList[count].Founded %></td>
+            <td class="text-center col-5"><%= TeamList[count].KeyPlayers %></td>
+        <% } %>       
+        </tr>
+    <% } %>
+    </table>
+</div>
+</div>
 </main>
-<% include ../partials/bottom_nav.ejs %>
-<% include ../partials/footer.ejs %>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
